@@ -1,7 +1,3 @@
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/tipso/1.0.8/tipso.min.js"
-></script>
-
 <script type="text/discourse-plugin" version="0.1">
 let words = {};
 let hasWords = false;
@@ -77,10 +73,4 @@ api.decorateCooked($elem => {
   abbrify($elem[0]);
 });
 
-$.fn.dtips = function() {
-  (dtip = this.find(".abbrify-word")),
-    dtip.tipso({ useTitle: true, background: "", color: "" });
-};
-
-api.decorateCooked($elem => $elem.dtips());
 </script>
