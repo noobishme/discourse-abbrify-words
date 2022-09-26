@@ -1,6 +1,28 @@
 abbreviations:
   type: list
-  default: 'rtfm,Read The Fine Manual|tl;dr,Too Long; Didn''t Read'
+  default: '
+rtfm,Read The Fine Manual
+
+|tl;dr,Too Long; Didn''t Read
+  
+|jen,Jen is the Creator of this Community
+
+|ai,Artificial Intelligence is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals and humans.
+
+|ar,Augmented Reality is where virtual objects and characters are overlaid on the real world.
+
+|mr,Mixed Reality is the merging of a real-world environment and a computer-generated one.
+
+|vr,Virtual Reality is the use of computer modeling and simulation that enables a person to interact with an artificial three-dimensional (3-D) visual or other sensory environment.
+
+|artificial intelligence,Artificial Intelligence is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals and humans.
+
+|augmented reality,Augmented Reality is where virtual objects and characters are overlaid on the real world.
+
+|mixed reality,Mixed Reality is the merging of a real-world environment and a computer-generated one.
+
+|virtual reality,Virtual Reality is the use of computer modeling and simulation that enables a person to interact with an artificial three-dimensional visual or other sensory environment.
+'
   description:
     en: "List of abbreviations to add `abbr` tags to in posts, as well as their meanings."
     da: "Liste over forkortelser der skal tilføjes `abbr` tags til i indlæg, samt deres betydninger."
