@@ -1,77 +1,26 @@
-.tipso_bubble,
-.tipso_bubble > .tipso_arrow {
-  box-sizing: border-box;
+abbr[title] {
+  position: relative;
+  
+  /* ensure consistent styling across browsers */
+  text-decoration: underline dotted; 
 }
 
-.tipso_bubble {
-  margin: 0 0.25em;
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+  content: attr(title);
+  
+  /* position tooltip like the native one */
   position: absolute;
-  text-align: center;
-  border-radius: 6px;
-  z-index: z("header") - 1;
-}
-
-.tipso_style {
-  cursor: help;
-  border-bottom: 1px dotted;
-}
-
-.tipso_title {
-  border-radius: 6px 6px 0 0;
-}
-
-.tipso_content {
-  word-wrap: break-word;
-  padding: 0.5em;
-}
-
-.tipso_bubble.default {
-  font-size: 1rem;
-}
-
-.tipso_bubble > .tipso_arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 8px solid;
-  pointer-events: none;
-}
-
-.tipso_bubble.top > .tipso_arrow {
-  border-top-color: #000;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  top: 100%;
-  left: 50%;
-  margin-left: -8px;
-}
-
-.tipso_bubble .top_right_corner,
-.tipso_bubble.top_right_corner {
-  border-bottom-left-radius: 0;
-}
-
-.tipso_bubble .bottom_right_corner,
-.tipso_bubble.bottom_right_corner {
-  border-top-left-radius: 0;
-}
-
-.tipso_bubble .top_left_corner,
-.tipso_bubble.top_left_corner {
-  border-bottom-right-radius: 0;
-}
-
-.tipso_bubble .bottom_left_corner,
-.tipso_bubble.bottom_left_corner {
-  border-top-right-radius: 0;
-}
-
-.tipso_bubble {
-  background: $primary;
-  color: $primary-low;
-
-  &.top > .tipso_arrow {
-    border-color: $primary;
-  }
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+  
+  /* style tooltip */
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+  font-size: 14px;
+  padding: 3px 5px;
 }
