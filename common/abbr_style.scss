@@ -1,26 +1,35 @@
 abbr[title] {
   position: relative;
-  
   /* ensure consistent styling across browsers */
-  text-decoration: underline dotted; 
+  text-decoration: underline dotted;
 }
 
 abbr[title]:hover::after,
 abbr[title]:focus::after {
-  content: attr(title);
-  
-  /* position tooltip like the native one */
-  position: absolute;
-  left: 0;
-  bottom: -30px;
-  width: auto;
-  white-space: nowrap;
-  
-  /* style tooltip */
-  background-color: #1e1e1e;
-  color: #fff;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
-  font-size: 14px;
-  padding: 3px 5px;
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: auto;
+    min-width: 200px;
+    white-space: break-spaces;
+    background-color: #004375;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0rgba(0,0,0,0.4);
+    font-size: 16px;
+    padding: 3px 5px;
+    z-index: 99;
 }
+
+abbr[title]:hover {
+	color: #333;
+	background: #FF6;
+}
+
+/* Add text before and after title text in bubble */
+/*
+abbr[title]:hover:after {
+	content: " (" attr(title) ")";
+}
+*/
